@@ -1,28 +1,14 @@
 import TaskList from "./components/TaskList";
 import TaskForm from "./components/TaskFrom";
-import { task } from "./data/Tasks";
-import { useState, useEffect } from "react";
 
 function App() {
-  const [tasks, settasks] = useState([]);
-
-  useEffect(() => {
-    settasks(task);
-  }, []);
-
-  function createTask(task) {
-    settasks([...tasks, {
-        id: tasks.length,
-        title: task.title,
-        description: task.description
-    }])
-  }
-
   return (
-    <>
-      <TaskForm createTask={createTask}/>
-      <TaskList tasks={tasks} />
-    </>
+    <main className="bg-zinc-900 h-screen">
+      <div className="container mx-auto p-5">
+        <TaskForm/>
+        <TaskList/>
+      </div>
+    </main>
   );
 }
 
