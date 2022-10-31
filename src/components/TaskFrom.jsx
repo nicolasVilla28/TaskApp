@@ -17,7 +17,7 @@ function TaskForm() {
   return (
     <div className="max-w-md mx-auto">
       <form onSubmit={submit} className="bg-slate-800 p-5 mb-4">
-        <h1 className="text-lg font-bold text-white mb-3 text-center">CREA TU TAREA</h1>
+        <h1 className="text-lg font-bold text-white mb-3 text-center">AÑADIR TAREA</h1>
       <input
         placeholder="Añadir tarea"
         onChange={(e) => setTitle(e.target.value)}
