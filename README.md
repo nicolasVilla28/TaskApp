@@ -1,2 +1,2 @@
 # TaskApp
-Task Aplication
+Task Application developed with React and Tailwind
